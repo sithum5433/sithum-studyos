@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#7656ed">
+  <meta name="description" content="Your complete final exam workspace. Study four subjects, practise questions, review flashcards, and track your progress in one calm place.">
+  <title>StudyOS — Your study space, connected.</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=Manrope:wght@400;500;600;650;700;750;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>try{document.documentElement.dataset.theme=JSON.parse(localStorage.getItem('studyos-v1')||'{}').theme||'light'}catch{}</script>
+  <script defer src="data.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="mobile-overlay" id="mobile-overlay"></div>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar" aria-label="Main navigation"></aside>
+    <div class="workspace">
+      <header class="topbar" id="topbar"></header>
+      <main id="main" tabindex="-1" aria-label="Study workspace"><div class="page"><p>Bringing your study space together…</p></div></main>
+      <footer class="site-footer"><span>Made for your next breakthrough.</span><span>Four subjects. One focused space.</span></footer>
+    </div>
+  </div>
+  <div id="modal-root"></div>
+  <div class="toast-container" id="toasts" aria-live="polite"></div>
+</body>
+</html>
